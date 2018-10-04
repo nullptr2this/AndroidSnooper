@@ -1,7 +1,7 @@
 package com.prateekj.snooper.networksnooper.database;
 
-import android.support.annotation.NonNull;
-import android.support.test.espresso.core.deps.guava.base.Predicate;
+import androidx.annotation.NonNull;
+import androidx.test.espresso.core.deps.guava.base.Predicate;
 
 import com.prateekj.snooper.networksnooper.model.HttpCall;
 import com.prateekj.snooper.networksnooper.model.HttpCallRecord;
@@ -24,8 +24,8 @@ import java.util.Map;
 
 import javax.annotation.Nullable;
 
-import static android.support.test.InstrumentationRegistry.getTargetContext;
-import static android.support.test.espresso.core.deps.guava.collect.Iterables.any;
+import static androidx.test.InstrumentationRegistry.getTargetContext;
+import static androidx.test.espresso.core.deps.guava.collect.Iterables.any;
 import static com.prateekj.snooper.utils.CollectionUtilities.last;
 import static com.prateekj.snooper.utils.TestUtilities.getCalendar;
 import static com.prateekj.snooper.utils.TestUtilities.getDate;

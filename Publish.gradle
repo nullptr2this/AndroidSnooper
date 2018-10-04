@@ -3,7 +3,7 @@ apply plugin: 'maven-publish'
 publishing {
     publications {
         mavenJava(MavenPublication) {
-            artifact bundleRelease
+//            artifact bundleRelease
             pom.withXml {
                 def dependenciesNode = asNode().appendNode('dependencies')
 
@@ -21,5 +21,7 @@ publishing {
     }
     repositories {
         mavenLocal()
+        mavenCentral()
     }
 }
+
